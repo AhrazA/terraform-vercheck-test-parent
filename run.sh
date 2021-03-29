@@ -9,4 +9,5 @@ docker run \
   -v ${OUTPUT_DIR}:/out/ \
   ahraza/terraform-vercheck:latest \
   -key /root/.ssh/${SSH_FILE_NAME} -directory /plan/ \
-  -graph /out/graph.dot -log /out/vercheck.log
+  -graph /out/graph.dot -log /out/vercheck.log \
+  -debug
